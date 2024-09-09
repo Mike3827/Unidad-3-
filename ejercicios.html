@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de la Ley de Ohm</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fffefe; 
+}
+a {
+            color: #eeff02;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            color: #ec0000;
+        }
+</style>
+<body>
+
+    <h1>La Ley de Ohm</h1>
+
+    <p>La Ley de Ohm establece que la corriente que fluye a través de un conductor entre dos puntos es directamente proporcional a la diferencia de potencial (voltaje) entre esos dos puntos, e inversamente proporcional a la resistencia del conductor. La fórmula matemática es:</p>
+
+    <h2>Fórmula:</h2>
+    <p><strong>V = I × R</strong></p>
+    <ul>
+        <li><strong>V</strong>: Voltaje (en voltios, V)</li>
+        <li><strong>I</strong>: Corriente (en amperios, A)</li>
+        <li><strong>R</strong>: Resistencia (en ohmios, Ω)</li>
+    </ul>
+
+    <h2>Ejercicios</h2>
+
+    <h3>Ejercicio 1</h3>
+    <p>Si tienes un voltaje de 12V y una resistencia de 4Ω, ¿cuál es la corriente?</p>
+    <p>Respuesta: <strong id="respuesta1"></strong></p>
+    <button onclick="calcularEjercicio1()">Mostrar respuesta</button>
+
+    <h3>Ejercicio 2</h3>
+    <p>Si la corriente es de 3A y la resistencia es de 10Ω, ¿cuál es el voltaje?</p>
+    <p>Respuesta: <strong id="respuesta2"></strong></p>
+    <button onclick="calcularEjercicio2()">Mostrar respuesta</button>
+
+    <h3>Ejercicio 3</h3>
+    <p>Si el voltaje es de 24V y la corriente es de 6A, ¿cuál es la resistencia?</p>
+    <p>Respuesta: <strong id="respuesta3"></strong></p>
+    <button onclick="calcularEjercicio3()">Mostrar respuesta</button>
+
+    <script>
+        function calcularEjercicio1() {
+            let voltaje = 12; // Voltios
+            let resistencia = 4; // Ohmios
+            let corriente = voltaje / resistencia;
+            document.getElementById('respuesta1').innerHTML = corriente + " A";
+        }
+
+        function calcularEjercicio2() {
+            let corriente = 3; // Amperios
+            let resistencia = 10; // Ohmios
+            let voltaje = corriente * resistencia;
+            document.getElementById('respuesta2').innerHTML = voltaje + " V";
+        }
+
+        function calcularEjercicio3() {
+            let voltaje = 24; // Voltios
+            let corriente = 6; // Amperios
+            let resistencia = voltaje / corriente;
+            document.getElementById('respuesta3').innerHTML = resistencia + " Ω";
+        }
+    </script>
+    <br>
+    <a href="ley de omh.html"><b>Volver</b></a></li>
+    <br>
+    <a href="https://ai2.appinventor.mit.edu/b/4bak">calculadora de ley de omh </a>
+
+</body>
+</html>
